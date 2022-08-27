@@ -21,3 +21,4 @@ class Solution {
         nums[first]=nums[second];
         nums[second]=temp;
     }
+}
