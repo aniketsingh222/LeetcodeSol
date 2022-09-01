@@ -1,3 +1,13 @@
-public class 167_Two_Sum_II_-_Input_Array_Is_Sorted {
-    
+class Solution {
+    public int[] twoSum(int[] nums, int target) {
+        for(int i=1; i<nums.length; i++) {
+            for(int j=i; j<nums.length; j++) {
+                if(nums[j] + nums[j-i] == target){
+                    return new int[]{j-i+1 ,j+1};
+                }
+            }
+        }
+        
+        return null;
+    }
 }
