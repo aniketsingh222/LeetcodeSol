@@ -1,3 +1,7 @@
-public class 2351_First_Letter_to_Appear_Twice {
-    
+class Solution {
+    public char repeatedCharacter(String s) {
+         int cnt[]= new int[26];
+    for(char ch:s.toCharArray()) if(++cnt[ch-'a']==2) return ch;
+    return 'a';
+    }
 }
