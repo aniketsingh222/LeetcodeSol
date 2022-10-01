@@ -1,3 +1,5 @@
-public class 292_Nim_Game {
-    
+class Solution {
+    public boolean canWinNim(int n) {
+        return (n & 3 != 0);
+    }
 }
